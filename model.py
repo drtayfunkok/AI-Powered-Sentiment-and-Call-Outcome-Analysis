@@ -6,8 +6,8 @@
 
 import openai
 
-# Set OpenAI API Key
-openai.api_key = "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"
+# Loads API key from env variable
+openai.api_key = os.getenv("OPENAI_API_KEY")  
 
 # Define Few-Shot Prompt
 FEW_SHOT_PROMPT = """
