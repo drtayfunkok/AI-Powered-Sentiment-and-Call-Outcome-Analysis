@@ -36,7 +36,8 @@ This project leverages **AI and Large Language Models (LLMs)** to analyze custom
    ```sh
       python src/main.py
 
-## Business Impact 💡
+
+## Business Impact 
 - Reduces Manual Work by automating transcript analysis.
 - Improves Decision Making with AI-driven insights.
 - Enhances Customer Satisfaction by identifying unresolved issues faster.
