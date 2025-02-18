@@ -6,6 +6,7 @@
 
 import openai
 import os
+from preprocessing import extract_customer_responses  # Import the function
 
 # Loads API key from env variable
 openai.api_key = os.getenv("OPENAI_API_KEY")  
