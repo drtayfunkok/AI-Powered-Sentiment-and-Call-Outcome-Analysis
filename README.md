@@ -34,8 +34,9 @@ This project leverages **AI and Large Language Models (LLMs)** to analyze custom
 
   4. Run the Flask application:
    ```sh
-      python src/main.py
-
+    preprocessing.py
+    model.py
+    python src/main.py
 
 ## Business Impact 
 - Reduces Manual Work by automating transcript analysis.
