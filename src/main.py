@@ -4,8 +4,8 @@
 # In[2]:
 
 from flask import Flask, render_template, request
-from src.preprocessing import extract_customer_responses
-from src.model import analyze_transcript
+from spreprocessing import extract_customer_responses
+from model import analyze_transcript
 
 # Define Flask App
 app = Flask(__name__)
