@@ -5,10 +5,10 @@ This project leverages **AI and Large Language Models (LLMs)** to analyze custom
 
 
 ## Features 
-- ✅ **Extracts Customer Responses** from call transcripts
-- ✅ **Sentiment Analysis** using GPT-based models
-- ✅ **Call Outcome Prediction** (Issue Resolved or Follow-Up Needed)
-- ✅ **Visual Insights** with graphs and word clouds
-- ✅ **Web Interface** built with Flask for easy transcript analysis
+- **Extracts Customer Responses** from call transcripts
+- **Sentiment Analysis** using GPT-based models
+- **Call Outcome Prediction** (Issue Resolved or Follow-Up Needed)
+- **Visual Insights** with graphs and word clouds
+- **Web Interface** built with Flask for easy transcript analysis
 
 
