@@ -4,15 +4,18 @@
 # In[1]:
 
 
-import re
-
-# Function to extracts only the customer responses from a call transcript.
-
+# Function to extract only customer responses from the transcript
 def extract_customer_responses(transcript):
+    """
+    Extracts only the customer's responses from a full conversation transcript.
     
-    #Assumes that agent and customer parts are separated by labels like "Agent:" or "Member:".
-    return " ".join(re.findall(r"Member: (.+)", transcript))
-
+    Args:
+        transcript (str): The full call transcript.
+    
+    Returns:
+        str: A cleaned version containing only the customer's responses.
+    """
+    return " ".join(re.findall(r"Member: (.+)", transcript))  # Extracts lines starting with "Member: "
 
 # In[ ]:
 
