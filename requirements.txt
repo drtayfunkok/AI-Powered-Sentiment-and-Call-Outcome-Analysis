@@ -25,3 +25,7 @@ openai
 flask
 flask-ngrok
 
+# Testing
+pytest
+unittest
+
