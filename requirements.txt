@@ -1,6 +1,30 @@
+# Core Python Libraries
+os
+re
+json
+zipfile
+warnings
 
-# OpenAI API (For LLM-based Sentiment Analysis)
-openai==1.3.5  
+# Data Processing
+pandas
+numpy
 
-# Flask (For Web API)
-flask==3.0.0
+# Visualization
+matplotlib
+seaborn
+wordcloud
+
+# Machine Learning & NLP
+scikit-learn
+nltk
+
+# Statistical Analysis
+scipy
+
+# OpenAI API
+openai
+
+# Web Application (Flask)
+flask
+flask-ngrok
+
