@@ -3,6 +3,8 @@
 
 # In[1]:
 
+import os  
+import re 
 
 # Function to extract only customer responses from the transcript
 def extract_customer_responses(transcript):
