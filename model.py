@@ -20,15 +20,15 @@ For each transcript, provide:
 2. **Call Outcome**: (Issue Resolved, Follow-up Needed)
 
 ### Examples:
-1️⃣ Transcript: "I am very happy with the support. They solved my issue quickly!"
+1 Transcript: "I am very happy with the support. They solved my issue quickly!"
    Sentiment: Positive
    Call Outcome: Issue Resolved
 
-2️⃣ Transcript: "The service is terrible. My issue is still not fixed!"
+2️ Transcript: "The service is terrible. My issue is still not fixed!"
    Sentiment: Negative
    Call Outcome: Follow-up Needed
 
-3️⃣ Transcript: "It was okay. Took longer than expected, but they helped me."
+3️ Transcript: "It was okay. Took longer than expected, but they helped me."
    Sentiment: Neutral
    Call Outcome: Issue Resolved
 
