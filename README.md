@@ -12,7 +12,7 @@ This project leverages **AI and Large Language Models (LLMs)** to analyze custom
 - **Web Interface** built with Flask for easy transcript analysis
 
 
-## Installation & Setup ⚙️
+## Installation & Setup 
 1. Clone this repository:
    ```sh
    git clone https://github.com/drtayfunkok/AI-Powered-Sentiment-and-Call-Outcome-Analysis.git
