@@ -45,52 +45,64 @@ Provide the response in this JSON format:
 }}
 """
 
+# Function to analyze transcript sentiment and call outcome using GPT-4 Turbo
 def analyze_transcript(transcript):
+    """
+    Uses OpenAI's GPT-4 Turbo to classify sentiment and call outcome from the customer's responses.
+
+    Args:
+        transcript (str): The full call transcript.
     
+    Returns:
+        tuple: (sentiment, sentiment_icon, outcome, outcome_icon)
+    """
+
     try:
-        # Extract only customer responses
+        # Extract only the customer responses
         customer_text = extract_customer_responses(transcript)
 
-        if not customer_text.strip():  # If no customer response found
+        # If no customer responses found, return default values
+        if not customer_text.strip():  
             return "No Customer Response", "❌", "No Data", "❌"
 
-        # 
-        prompt = prompt = FEW_SHOT_PROMPT.format(text=customer_text)
-        
+        # Format the prompt for the LLM
+        prompt = FEW_SHOT_PROMPT.format(text=customer_text)
+
+        # Send request to OpenAI's GPT-4 Turbo model
         response = openai.chat.completions.create(
             model="gpt-4-turbo",
             messages=[{"role": "user", "content": prompt}],
         )
 
+        # Extract response from the model
         result = response.choices[0].message.content
+        print("🔹 OpenAI Response:", result)  # Debugging print statement
 
-        print("🔹 OpenAI Response:", result)  # Debugging
-
-        # Extract sentiment & call outcome
+        # Initialize default labels
         sentiment = "Neutral"
+        sentiment_icon = "😐"
         outcome = "Follow-up Needed"
+        outcome_icon = "🔄"
 
+        # Check for sentiment classification in model response
         if "Positive" in result:
             sentiment = "Positive"
             sentiment_icon = "😊"
         elif "Negative" in result:
             sentiment = "Negative"
             sentiment_icon = "😡"
-        else:
-            sentiment_icon = "😐"
 
+        # Check for call outcome classification in model response
         if "Resolved" in result:
             outcome = "Issue Resolved"
             outcome_icon = "✅"
-        else:
-            outcome_icon = "🔄"
 
         return sentiment, sentiment_icon, outcome, outcome_icon
 
     except Exception as e:
+        # Handle API errors gracefully
         print("❌ OpenAI API Error:", e)
         return "Error", "❌", "Error", "❌"
-
 
 # In[ ]:
 
