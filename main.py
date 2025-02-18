@@ -3,14 +3,14 @@
 
 # In[2]:
 
-
 from flask import Flask, render_template, request
 from preprocessing import extract_customer_responses
 from model import analyze_transcript
 
+# Define Flask App
 app = Flask(__name__)
 
-
+# Define Flask route
 @app.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
@@ -21,16 +21,16 @@ def index():
         if file.filename == "":
             return "<h2>⚠️ No file selected.</h2><a href='/'>⬅️ Go Back</a>"
 
-        # ✅ Read transcript content
+        # Read transcript content
         transcript_text = file.read().decode("utf-8")
 
-        # ✅ Extract customer responses
+        # Extract customer responses
         customer_text = extract_customer_responses(transcript_text)
 
         if not customer_text.strip():  # No customer response found
             return "<h2>⚠️ No customer responses found in transcript.</h2><a href='/'>⬅️ Go Back</a>"
 
-        # ✅ Get AI analysis
+        # Get AI analysis
         sentiment, sentiment_icon, outcome, outcome_icon = analyze_transcript(transcript_text)
 
         return f"""
@@ -70,7 +70,4 @@ if __name__ == "__main__":
 
 
 # In[ ]:
-
-
-
 
