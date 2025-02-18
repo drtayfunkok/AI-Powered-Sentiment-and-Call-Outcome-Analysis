@@ -23,3 +23,9 @@ This project leverages **AI and Large Language Models (LLMs)** to analyze custom
    ```sh
    git clone https://github.com/drtayfunkok/AI-Powered-Sentiment-and-Call-Outcome-Analysis.git
    cd AI-Powered-Sentiment-and-Call-Outcome-Analysis
+   
+ 2. Install dependencies:
+    sh
+
+    pip install -r requirements.txt
+
