@@ -1,9 +1,8 @@
 # AI-Powered-Sentiment-and-Call-Outcome-Analysis
 
-Project Overview : 
-This project leverages OpenAI's GPT-4 to analyze customer service call transcripts, classifying:
-Sentiment: Positive, Neutral, or Negative
-Call Outcome: Issue Resolved or Follow-up Needed
+## Overview
+This project leverages **AI and Large Language Models (LLMs)** to analyze customer service call transcripts. It automatically classifies **sentiment** (Positive, Neutral, Negative) and determines the **call outcome** (Resolved or Follow-Up Needed). 
+
 
 The goal is to automate transcript analysis, reduce manual effort, and provide data-driven insights for customer service improvement.
 
