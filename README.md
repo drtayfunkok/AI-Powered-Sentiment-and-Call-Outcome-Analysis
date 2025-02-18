@@ -25,7 +25,6 @@ This project leverages **AI and Large Language Models (LLMs)** to analyze custom
    cd AI-Powered-Sentiment-and-Call-Outcome-Analysis
    
  2. Install dependencies:
-    sh
-
+    ```sh
     pip install -r requirements.txt
 
