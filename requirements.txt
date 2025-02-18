@@ -1,6 +1,3 @@
-# Core Python Libraries
-os
-re
 
 # Data Processing
 pandas
