@@ -4,7 +4,7 @@
 # In[2]:
 
 from flask import Flask, render_template, request
-from spreprocessing import extract_customer_responses
+from preprocessing import extract_customer_responses
 from model import analyze_transcript
 
 # Define Flask App
