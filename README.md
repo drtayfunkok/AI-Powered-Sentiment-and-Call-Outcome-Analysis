@@ -12,20 +12,6 @@ This project leverages **AI and Large Language Models (LLMs)** to analyze custom
 - **Web Interface** built with Flask for easy transcript analysis
 
 
-## Folder Structure 
-
-📂 AI-Powered-Sentiment-and-Call-Outcome-Analysis
-├── 📂 src/               # Source code
-│   ├── main.py          # Flask app (API & UI)
-│   ├── preprocessing.py  # Extracts customer responses
-│   ├── model.py         # AI model for sentiment & outcome analysis
-├── 📂 test/              # Contains test cases
-├── requirements.txt      # Dependencies
-├── README.md            # Project documentation
-├── AI_Presentation.pptx  # Project presentation
-
-
-
 ## Installation & Setup ⚙️
 1. Clone this repository:
    ```sh
